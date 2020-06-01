@@ -1,0 +1,80 @@
+
+.main {
+    overflow: hidden;
+    font-family: 'Josefin Sans' , sans-serif;
+
+   
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.jumbotron {
+    padding: 1.85%;
+} 
+
+  
+  .full-width {
+    width: 70%;
+  }
+  
+  .mat-card:not([class*=mat-elevation-z]) {
+      box-shadow: none;
+    /* box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); */
+}
+
+.filter {
+    filter: invert(100%);
+}
+
+.change {
+  background-image: url('https://static.thenounproject.com/png/511233-200.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  
+  color: #4877a7;
+  padding-bottom: 2%;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+  
+}
+
+
+
+.onclick:hover{
+  transform: scale(1.2);
+}
+.onclick:active {
+
+transition: all .5s;
+}

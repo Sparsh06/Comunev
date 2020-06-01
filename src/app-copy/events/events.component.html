@@ -1,0 +1,37 @@
+
+    
+
+<div style="font-size: 100%; text-align: center; height: 210vh; width: 100%; background-color:rgb(225, 248, 143);">
+
+<!-- HEADER -->
+
+<div class="topnav">
+    <a class="navbar-brand " href="#"><i class="fa fa-diamond" aria-hidden="true" style="color: white;"></i></a>
+    
+    <div class="topnav-right">
+      <a routerLink="/about-page" style="margin-right: 10px;">About us<i class="flaticon-airplane49"></i></a>
+      <a routerLink="/events" style="margin-right: 10px;">Events</a>
+      <a routerLink="/interests" style="margin-right: 10px;">Interests</a>
+      <a routerLink="/signup" style="margin-right: 10px;">Sign up</a>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<p style="font-size: 40px; color: white; " ><a  [routerLink]="" (click)="showUpcoming()" style="font-size: 30px; color: white;">Upcoming-Events</a> | <a  [routerLink]="" (click)="showpast()" style="font-size: 30px; color: white;">Past-Events</a> </p>
+
+<div [hidden]="hide">
+    <app-upcoming-events></app-upcoming-events>
+
+</div> 
+
+<div [hidden]="hide2">
+    <app-past-events></app-past-events>
+</div>
+
+
+
+</div>
+

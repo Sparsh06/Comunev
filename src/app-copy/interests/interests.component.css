@@ -1,0 +1,98 @@
+
+
+.body {
+    overflow: hidden;
+    background-color: teal;
+    color: white;
+    font-family: 'Josefin Sans' , sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.column {
+   float: right;
+  width: 50%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+   
+
+  .header {
+    padding: 40px; /* some padding */
+    text-align: center; /* center the text */
+    background: rgba(0,0,0,0.4); /* green background */
+    color: white; /* white text color */
+  }
+  
+
+
+#text{
+    text-align: center;
+    color: white;
+    padding-top: 4%;
+    font-weight: 500;
+    font-size: large;
+    font-size: 20px;
+   
+}
+
+.image {
+   
+    /* border: 0.5px solid rgba(0,0,0,1); */
+    background-color: teal;
+
+}
+
+.wrap {
+  margin: 0 auto;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  
+  color: #4877a7;
+  padding-bottom: 2%;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+  
+}
+
+
+
+
+.onclick:hover{
+  transform: scale(1.2);
+}
+.onclick:active {
+
+transition: all .5s;
+}

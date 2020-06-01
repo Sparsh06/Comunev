@@ -1,0 +1,293 @@
+
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script type = "text/javascript" src="app.component.js" ></script> 
+  <script src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+
+
+  <!-- HEADER -->
+
+  <div class="topnav container">
+    <a class="navbar-brand" href="#"><i class="fa fa-diamond" aria-hidden="true" style="color: white; margin-top:0px"></i></a>
+    
+    <div class="topnav-right">
+      <a routerLink="/about-page" style="margin-right: 10px;">About us<i class="flaticon-airplane49"></i></a>
+      <a routerLink="/events" style="margin-right: 10px;">Events</a>
+      <a routerLink="/interests" style="margin-right: 10px;">Interests</a>
+      <a routerLink="/signup" style="margin-right: 10px;">Sign up</a>
+    </div>
+  </div>
+
+    <div class="container bgcolor">
+
+
+      <div class="container" style="margin-left: 2.5%; width:95%;margin-top:5%; padding-bottom: 6%;  margin-right:30%;border-bottom: 1px solid #ccc;">
+
+
+ 
+        <div class="row ">
+        <div class = "col-md-4" style=" margin-left:-3%;text-align: center;">
+          <div class = "p-img ">
+            <img [src] = "url">
+            <input type="file" (change)="onselectFile($event)">
+          </div>
+        </div>
+        <div class = "col-md-3" >
+          <div class = "profile-info " >
+            <h3 class = "name" style=" margin-top: 20px;"></h3>
+            <h3 class = "u-name" style=" margin-top: 8px ;color: rgb(88, 85, 82);"></h3>
+            <h3 class = "city" style=" margin: 2px !important;">{{CITY}}</h3>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="row">
+    <div  class = "col-md-4">
+      <div class="line-content " style="padding-left: 8%; padding-top: 7%; text-align: center;">
+ <!-- Subtitle -->
+        <h3 class="section-item-title-1 " style = "padding-bottom: 10px;  "><b>INTERESTS </b></h3>
+        <!-- /Subtitle -->
+        <!-- content -->
+        <ul class="skills-list">
+          <!-- item-list -->
+          <li>
+            <div  class = "progress-bar-success"style=" margin: 5px 0px;padding:5px 20px; display: inline-block;border-radius: 25px;" >MUSIC</div>
+          </li>
+          <!-- /item list -->
+          <!-- item-list -->
+          <li>
+            <div  class = "progress-bar-info"style=" margin: 5px 0px; padding:5px 20px; display: inline-block; border-radius: 25px;" >HOCKEY</div>    
+          </li>
+          <!-- /item list -->
+          <li>
+            <div  class = "progress-bar-danger"style=" margin: 5px 0px; padding:5px 20px; display: inline-block; border-radius: 25px;" >PROGRAMMING</div>           
+          </li>
+          <!-- /item list -->
+          <li>
+            <div  class = "progress-bar-warning"style=" margin: 5px 0px; padding:5px 20px; display: inline-block; border-radius: 25px;" >SINGING</div>
+         </li>
+        </ul>
+      </div> 
+    </div> 
+    <div class = "col-md-8 bgcolor offset-md-8" style="margin-top: 2%;">  
+      <div class="timeline-wrap">
+        <div class="timeline-bg">
+          <!-- PROFILE INFO -->
+          <section class="timeline profile-infos">
+          </section>
+          <!-- ==>> /SECTION: PROFILE INFOS -->    
+          <!-- SECTION INTERESTS  -->
+          <section class="timeline interests" id="interests">        
+            <!-- SECTION TITLE -->
+            <div class="line row">                       
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-9 content-wrap bg1" style="width: 96%; text-align: center;">
+                <!-- Section title -->
+                <h3 class="section-item-title-1" style = "padding-bottom: 10px; "><b>EVENTS ATTENDED </b></h3>
+                <!-- /Section title -->
+              </div>
+              <!-- /Item Content -->             
+            </div>
+            <!-- /SECTION TITLE -->
+            <div class="line row">              
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content line-content-interests">     
+                <div class="container">
+                <div class="row">
+                  <div class="col-md-2 " style="text-align: center; padding: 10px;">
+                    <!-- image here-->
+                     <img height = "120px" width = "160px" src = "https://i.pinimg.com/564x/5a/99/fb/5a99fbb9f8c954d369e58033aac42e33.jpg">
+                  </div>
+                  <div class="col-md-5">
+                     <!-- events title --> <h3 class="section-item"> Holi Events</h3>
+                     <!-- events time -->
+                  <h4 class="events-time"><span class="events-date">May 2019 , Hyderabad</span></h4>
+                  <!-- /events time -->
+                  <!-- content -->
+                  <div class="events-description">
+                    <p>Holi is considered as one of the most revered and celebrated festivals of India and it is celebrated in almost 
+                      every part of the country.</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+        </div>
+              <!-- /Item Content -->
+            </div>
+            <!-- SECTION ITEM -->
+          <div class="line row">           
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1 ">
+                <div class="line-content line-content-interests">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-2" style="text-align: center; padding: 10px;">
+                        <!-- image here-->                        
+                           <img height= "120px" width = "160px" src = "https://goop.com/wp-content/uploads/2016/12/holidays-GS01061634.jpg">
+                      </div>
+                <div class="col-md-5">
+                  <!-- events title -->
+                  <h3 class="section-item">Gatherings</h3>
+                  <!-- /events title -->
+                  <h4 class="events-time"><span class="events-date">june 24 , Delhi</span></h4>
+                  <!-- /events time -->
+                  <!-- content -->
+                  <div class="events-description">
+                    <p>The city is hosting a gathering of business leaders next month.
+                      They met at a social gathering organized by the company.                     
+                      </p>
+                  </div>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!--/Item Content -->
+            </div>
+            </div>
+            </div>
+            </div>
+            <!-- /SECTION ITEM -->   
+            <div class="line row">
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content line-content-interests">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-2"  style="text-align: center; padding: 10px;">
+                        <!-- image here-->
+                         <img height= "120px" width = "160px" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS0NRnxgfRaPtcAAyxCFncwB7SxoMnslnL-VXFarHSqrNbxEoWp&usqp=CAU">
+                      </div>
+                      <div class="col-md-5">
+                  <!-- events title -->
+                  <h3 class="section-item">Social</h3>
+                  <!-- /events title -->
+                  <h4 class="events-time"><span class="events-date">May 2013 , Chandigarh</span></h4>
+                  <!-- /events time -->
+                  <!-- content -->
+                  <div class="events-description">
+                    <p>Every single nation or maybe a population group lifestyle in a single features its own societal fests. Whether or not they 
+                      think they don’t essentially sort out this sort of situations. </p>
+                  </div>
+                  <!-- /Content -->
+                  </div>
+                </div>
+              </div>              
+            </div>
+            </div>
+            </div>  
+            
+            
+          </section>
+
+          
+        </div>
+        
+      </div> 
+      
+  </div>
+  </div>
+
+  <div style=" height:100%; font-size: 25px; margin-top: 10%; " > 
+    
+    <footer id="footer" class="row container">
+  
+        <!-- Footer Links -->
+        <div class=" text-center text-md-left" style="margin-top: 1%; margin-bottom:5%;">
+      
+          <!-- Grid row -->
+          <div class="row">
+            <hr class=" d-md-none">        
+            <hr class=" d-md-none">    
+            <!-- Grid column -->
+            <div class=" mx-auto">
+      
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style=" margin-left:410px;"></h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a routerLink="/become-a-speaker"><p style="color: white;">Become a speaker</p></a>
+                </li>
+                <li>
+                  <a routerLink="/venue-partner"><p style="color: white;">Be a Venue partner</p></a>
+                </li>
+                <li>
+                  <a routerLink="/volunteer"><p style="color: white;">Volunteer with us</p></a>
+                </li>
+                <li>
+                 <a routerLink="/sponsor"><p style="color: white;">Sponsor Us</p></a>
+                </li>
+                <li>
+                  <a routerLink="/partner"><p style="color: white;">Partner with us</p></a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->    
+            <hr class="d-md-none">   
+            <!-- Grid column -->
+            <div class=" mx-auto">   
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="margin-left: 350px; "></h5>  
+              <ul class="list-unstyled">
+                <li>
+                  <a routerLink="/about-page"> <p ><b>ABOUT US</b></p></a>
+                </li>
+                <li>
+                  <a routerLink="/events"><p ><b>EVENTS</b></p></a>
+                </li>
+                <li>
+                  <a routerLink="/communities"><p><b>COMMUNITIES</b></p></a>
+                </li>
+                <li>
+                  <a routerLink="/interests"><p><b>INTERESTS</b></p></a>
+                </li>
+              </ul>    
+            </div>
+            <!-- Grid column -->  
+             <!-- Grid column -->
+             <div class=" mx-auto">    
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="margin-left: 300px;"></h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                
+                  <p class="onclick" style="padding-right:0.2em; float: left;"><a href="https://www.facebook.com/comunev"><img src="assets/facebook-big.png"></a></p>
+                  <p class="onclick"  style="padding-right:0.2em; float: left;"><a href="https://www.instagram.com/comunevindia"><img src="assets/instagram-big.png"></a></p>
+                  <p class="onclick" style="padding-right:0.2em; float: left;"><a href="https://twitter.com/comunevindia"><img  src="assets/twitter-big.png"></a></p>
+                  <p class="onclick" style="padding-right:0.2em; float: left;"><a href="https://www.linkedin.com/company/comunev"><img  src="assets/linkedin-icon.png"></a></p>
+                  
+                </li>
+                <li>
+                  <div style="margin-right:40px;"><p><a href="mailto:contact@comunev.com">contact@comunev.com</a></p></div>
+                </li>
+                
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->   
+        </div>
+        <!-- Footer Links -->  
+      
+      </footer>
+      <!-- Footer -->
+  
+  
+  
+  </div>  
+  
+  
+  </div>  
+
+  
+  
+

@@ -1,0 +1,125 @@
+.main {
+    overflow-x: hidden;
+    font-family: 'Josefin Sans' , sans-serif;
+
+}
+
+
+ 
+
+.container {
+  display: flex;
+  justify-content: center;
+
+  
+}
+
+.circle {
+    border: 5px solid #161414;
+    width: 200px;
+    height: 200px;
+    border-radius: 1000px; 
+    margin: 0.5em;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.2);
+}
+.circle.first {
+    background-image: url('https://images.unsplash.com/photo-1499018658500-b21c72d7172b?ixlib=rb-1.2.1&w=1000&q=80');
+    background-size: cover;
+    background-repeat: none;
+    background-position: center center;
+    color: white;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.2);
+  }
+  .circle.second {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSRVMqEWXpYoQZm4LI_uiIi8zNgOaW6S0AHHl1aPqe8O12_YbQX&usqp=CAU');
+    background-size: cover;
+    background-repeat: none;
+    background-position: center center;
+    color: white;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.2);
+  }
+.circle.third {
+  background-image: url('https://cdn.hswstatic.com/gif/annuals-over-24-inches-1.jpg');
+  background-size: cover;
+  background-repeat: none;
+  background-position: center center;
+  color: white;
+  box-shadow: 1px 5px 10px rgba(0,0,0,0.2);
+}
+
+.circle.forth {
+    background-image: url('https://i.pinimg.com/236x/2d/2d/79/2d2d79c555743c6a29751587817d82f7.jpg');
+    background-size: cover;
+    background-repeat: none;
+    background-position: center center;
+    color: white;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.2);
+  }
+  .circle.fifth {
+    background-image: url('https://www.almanac.com/sites/default/files/image_nodes/flower-bouquet-2.jpg');
+    background-size: cover;
+    background-repeat: none;
+    background-position: center center;
+    color: white;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.2);
+  }
+  .circle.sixth {
+    background-image: url('https://images.pexels.com/photos/36753/flower-purple-lical-blosso.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-size: cover;
+    background-repeat: none;
+    background-position: center center;
+    color: white;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.2);
+  }
+
+
+  .jumbotron {
+    padding: 1.85%;
+} 
+
+
+  
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  
+  color: #4877a7;
+  padding-bottom: 2%;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+  
+}
+
+
+
+
+
+.onclick:hover{
+  transform: scale(1.2);
+}
+.onclick:active {
+
+transition: all .5s;
+}

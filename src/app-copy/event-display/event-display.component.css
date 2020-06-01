@@ -1,0 +1,220 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ 
+}
+.cont {
+  overflow-x: hidden;
+  font-family: 'Josefin Sans' , sans-serif;
+
+}
+
+
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: white;
+    margin-top: 5px;
+   position: fixed;
+  }
+
+
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    border-radius: 30px;
+    color: black;
+    text-decoration: none;
+    
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: rgb(19, 7, 90);   
+    color: white;
+  }
+
+ 
+  .sidebar span {
+    display: block;
+    border-radius: 30px;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    
+  }
+  .sidebar span:hover:not(.active) {
+    filter: invert(100%);
+   
+    font-weight: bolder;
+    
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      display: none;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+ 
+.jumbotron {
+    padding: 1.85%;
+} 
+.p-img {
+  width: 350px;
+
+  height: 190px;
+
+}
+
+.p-img img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  border: 4px solid #f5f5f5;
+  box-shadow: 1px 5px 10px rgba(0,0,0,0.2);
+
+  background: #f5f5f5;
+
+}
+
+.profile-info {
+  
+  font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+.profile-info h2 {
+  font-size: 2rem;
+  font-variant: small-caps;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+.profile-info h3 {
+  
+
+  font-weight: bold;
+ 
+  color: #070202;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.profile-info h4 {
+  margin-right: 8px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #1f1c1c;
+}
+.name {
+   margin-left: 30%;
+   margin-top: 20px;
+   
+   
+}
+.Organizer {
+  margin-left: 12%;
+  margin-right: 12%;
+
+}
+
+.button {
+  text-align: center;
+  margin-top: 8%;
+ 
+}
+.button :hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+.button-two {
+  text-align: center;
+  margin-top: 13%;
+  transition-duration: 0.4s;
+
+
+}
+
+.button-two :hover {
+
+    box-shadow: 0 5px 1px 0 rgba(0,0,0,0.24), 0 1px 1px 0 rgba(0,0,0,0.19);
+}
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  
+  color: #4877a7;
+  padding-bottom: 2%;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+  
+}
+
+
+
+
+
+.onclick:hover{
+  transform: scale(1.2);
+}
+.onclick:active {
+
+transition: all .5s;
+}

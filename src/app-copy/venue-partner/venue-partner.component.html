@@ -1,0 +1,193 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+
+
+
+
+ <!-- HEADER -->
+
+ <div class="topnav">
+  <a class="navbar-brand " href="#"><i class="fa fa-diamond" aria-hidden="true" style="color: white;"></i></a>
+  
+  <div class="topnav-right">
+    <a routerLink="/about-page" style="margin-right: 10px;">About us<i class="flaticon-airplane49"></i></a>
+    <a routerLink="/events" style="margin-right: 10px;">Events</a>
+    <a routerLink="/interests" style="margin-right: 10px;">Interests</a>
+    <a routerLink="/signup" style="margin-right: 10px;">Sign up</a>
+  </div>
+</div>
+
+
+<div class="main">
+
+<div class="column" style="justify-content: space-between; margin-top:5%;">
+<div class="row" style="justify-content: space-between;" >
+    <div  style="  margin-left: 10%;  height: 450px; background-image: url('assets/venue-background.svg');">
+    <div  style=" width: 510px;float:left; text-align:center; font-size: 30px; margin-bottom: 7%; ">
+<br>
+
+<br>
+
+       <b style="font-size: 45px;">Become a Venue Partner</b>
+     
+       <br>
+       <br>
+       <br>
+       
+<br>
+<br>
+<br>
+       <p>If you've got a nice cozy </p>
+       <p>place where people can</p>
+       <p>meet , network and enjoy a</p>
+       <p>speaker or take a workshop in</p>
+       <p>great event , connect with us</p>
+       <p>for a partnership .</p>
+    
+ </div>
+  
+    </div>
+    
+
+
+
+
+    <div style="float:right; margin-left:5%; margin-bottom: 7%;  width: 45%;">
+      <form [formGroup] = "venueform" (ngSubmit)="onSubmit()">
+
+    
+  <mat-card>
+    <div >
+        <mat-form-field class="full-width">
+          <mat-label style="font-size: 18px;word-spacing: 5px;">Full  Name</mat-label>
+          <input formControlName="fullname" matInput placeholder="" >
+        </mat-form-field>
+      <br>
+      <br>
+      <br>
+        <mat-form-field class="full-width">
+          <mat-label style="font-size: 18px; word-spacing: 5px;">Email Address</mat-label>
+          <input formControlName="email" matInput placeholder="">
+        </mat-form-field>
+        <br>
+        <br>
+        <br>
+        <mat-form-field class="full-width">
+          <mat-label style="font-size: 18px;">Contact</mat-label>
+          <input formControlName="contact" matInput placeholder="">
+        </mat-form-field>
+        <br>
+        <br>
+        <br>
+        <mat-form-field class="full-width">
+          <mat-label style="font-size: 18px; word-spacing: 5px;">Venue Details</mat-label>
+          <input formControlName="details" matInput placeholder="">
+        </mat-form-field>
+        </div> 
+    </mat-card>
+    <br>
+    <button type="submit" class="btn btn-info" (Click)=ngOnInit  routerLink="/about-page" style="margin-left: 3%; border-radius: 30px; padding: 10px 30px;">Submit</button>
+   </form>
+ </div>
+
+ 
+</div>
+
+
+
+<div style=" height:100%; font-size: 25px; margin-top: 10%; background-color: rgb(6, 20, 61);" > 
+    
+  <footer id="footer" class="row" >
+
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left" style="margin-top: 1%; margin-bottom:5%;">
+    
+        <!-- Grid row -->
+        <div class="row">
+          <hr class=" d-md-none">        
+          <hr class=" d-md-none">    
+          <!-- Grid column -->
+          <div class=" mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style=" margin-left:480px;"></h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a routerLink="/become-a-speaker"><p style="color: white;">Become a speaker</p></a>
+              </li>
+              <li>
+                <a routerLink="/venue-partner"><p style="color: white;">Be a Venue partner</p></a>
+              </li>
+              <li>
+                <a routerLink="/volunteer"><p style="color: white;">Volunteer with us</p></a>
+              </li>
+              <li>
+               <a routerLink="/sponsor"><p style="color: white;">Sponsor Us</p></a>
+              </li>
+              <li>
+                <a routerLink="/partner"><p style="color: white;">Partner with us</p></a>
+              </li>
+            </ul>
+    
+          </div>
+          <!-- Grid column -->    
+          <hr class="d-md-none">   
+          <!-- Grid column -->
+          <div class=" mx-auto">   
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="margin-left: 350px; "></h5>  
+            <ul class="list-unstyled">
+              <li>
+                <a routerLink="/about-page"> <p ><b>ABOUT US</b></p></a>
+              </li>
+              <li>
+                <a routerLink="/events"><p ><b>EVENTS</b></p></a>
+              </li>
+              <li>
+                <a routerLink="/communities"><p><b>COMMUNITIES</b></p></a>
+              </li>
+              <li>
+                <a routerLink="/interests"><p><b>INTERESTS</b></p></a>
+              </li>
+            </ul>    
+          </div>
+          <!-- Grid column -->  
+           <!-- Grid column -->
+           <div class=" mx-auto">    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="margin-left: 300px;"></h5>
+    
+            <ul class="list-unstyled">
+              <li>
+              
+                <p class="onclick" style="padding-right:0.2em; float: left;"><a href="https://www.facebook.com/comunev"><img src="assets/facebook-big.png"></a></p>
+                <p class="onclick"  style="padding-right:0.2em; float: left;"><a href="https://www.instagram.com/comunevindia"><img src="assets/instagram-big.png"></a></p>
+                <p class="onclick" style="padding-right:0.2em; float: left;"><a href="https://twitter.com/comunevindia"><img  src="assets/twitter-big.png"></a></p>
+                <p class="onclick" style="padding-right:0.2em; float: left;"><a href="https://www.linkedin.com/company/comunev"><img  src="assets/linkedin-icon.png"></a></p>
+                
+              </li>
+              <li>
+                <div style="margin-right:40px;"><p><a href="mailto:contact@comunev.com">contact@comunev.com</a></p></div>
+              </li>
+              
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->   
+      </div>
+      <!-- Footer Links -->  
+    
+    </footer>
+    <!-- Footer -->
+
+
+</div>
+</div>
+ 
+

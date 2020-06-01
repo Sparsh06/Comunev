@@ -1,0 +1,213 @@
+
+.color1 {
+  color: #249991;
+}
+.color2 {
+  color: #3b658a;
+}
+.color3 {
+  color: #ce5f5f;
+}
+.font1 {
+  font-family: 'Open Sans', sans-serif;
+}
+.bold {
+  font-weight: bold;
+}
+.bg-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-image: url('../img/background2.jpg');
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+  background-color: #3b658a;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative !important;
+  padding: 10px;
+}
+@media (min-width: 240px) and (max-width: 719px) {
+  body {
+    background-image: none;
+  }
+}
+@media (min-width:992px) {
+  padding: 0px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+hr {
+  border: 0;
+}
+h1,
+h2 {
+  color: #249991;
+  margin-top: 0;
+}
+h3 {
+  color: #3b658a;
+}
+p {
+  color: black;
+}
+.profile-intro p {
+  font-size: 16px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .profile-intro p {
+    text-align: left;
+    font-size: 14px;
+  }
+}
+.section-title {
+  text-transform: uppercase;
+  color: #2a5479;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 35px;
+  padding-bottom: 20px;
+  font-family: 'Josefin Sans' , sans-serif;
+}
+@media (min-width:992px) {
+  .section-title {
+    margin-left: -15px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-title {
+    margin-left: -35px;
+  }
+}
+.section-item-title-1 {
+  color: #3b658a;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 35px;
+  line-height: 35px;
+  margin-top: 14px;
+  font-family: 'Josefin Sans' , sans-serif;
+}
+.section-item{
+  color: #3b658a;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 14px;
+  font-family: 'Josefin Sans' , sans-serif;
+}
+/* PROFILE INTRO */
+.profile-intro {
+  margin-top: 50px;
+  position: relative;
+  z-index: 99;
+}
+@media (min-width:992px) {
+  .profile-intro {
+    height: 45px;
+  }
+}
+.profile-pic {
+  text-align: center;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  border: 5px solid #249991;
+  overflow: hidden;
+  margin: 0 auto;
+  background: #fafafa;
+}
+.profile-pic img {
+  width: 18px;
+  height: 18px;
+  margin-top: 6px;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* INTERESTS */
+.line-content-interests {
+  padding-bottom: 10px;
+}
+@media (min-width:992px) {
+  .line-content-interests {
+    min-height: 150px;
+  }
+}
+.events-time,
+.job {
+  font-size: 14px;
+  font-weight: bold;
+  color: #999999;
+}
+.events-date,
+.job-date {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 200;
+}
+.events-description,
+.job-description {
+  font-size: 13px;
+}
+.events-description p,
+.job-description p {
+  font-size: 13px;
+  line-height: 19px;
+}
+/* Section: Skills */
+
+.skills-list {
+  list-style: none;
+}
+
+
+/* Footer */
+#footer {
+  background: #ce5f5f;
+  color: #fff;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  text-align: center;
+  margin-top: 130px;
+}
+#footer p {
+  color: #fff;
+}
+#footer .quote {
+  font-size: 22px;
+  font-weight: 200;
+  margin-bottom: 5px;
+  font-family: 'Josefin sans' , sans-serif;
+}
+#footer .company {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Josefin sans' , sans-serif;
+
+}
+.progress-bar {
+  height: 20px;
+  width:5000px;
+}
+
